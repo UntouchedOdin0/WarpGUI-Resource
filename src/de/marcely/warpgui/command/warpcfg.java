@@ -43,7 +43,7 @@ public class warpcfg implements CommandExecutor {
 						if(warpname != null){
 							if(icon != null){
 								setIcon(warpname, icon, id);
-								sender.sendMessage(Language.Changed_Icon.getMessage().replace("{icon", icon.name().toLowerCase().replace("_", " ")));
+								sender.sendMessage(Language.Changed_Icon.getMessage().replace("{icon}", icon.name().toLowerCase().replace("_", " ")));
 							}else{
 								sender.sendMessage(Language.Unkown_Material.getMessage().replace("{material}", splits[0]));
 							}
